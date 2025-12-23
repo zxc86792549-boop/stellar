@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* popup */
+.main_popup_01 { position: absolute; left: 100px; top: 30%; z-index: 88; color: #000;}
+.main_popup_01 img { width: 300px; height: 450px; }
+.main_popup_01 p { background: url(../images/i_close_b.svg) no-repeat center; width: 30px; height: 30px; z-index: 99; font-size: 0; position: absolute; right: 15px; top: 7px; cursor: pointer;}
+
+.main_popup_02 { position: absolute; left: 420px; top: 30%; z-index: 88; color: #000;}
+.main_popup_02 img { width: 300px; height: 550px; }
+.main_popup_02 p { background: url(../images/i_close_b.svg) no-repeat center; width: 30px; height: 30px; z-index: 99; font-size: 0; position: absolute; right: 15px; top: 7px; cursor: pointer;}
+
+@media (max-width:750px) {
+    .main_popup_01 { position: absolute; left: 20px; top: 25%; }
+    .main_popup_02 { position: absolute; left: 70px; top:30% ;}
+}
+
+/* visual */
+
+.visual .visual_list { width: 100%; height: 900px; }
+
+.visual .swiper-pagination {bottom: 30px;}
+.visual .swiper-pagination-bullet { background: #fff;}
+
+/* intro */
+.intro { padding: 200px 0;}
+.intro .inner {max-width: 1600px; display: flex;  justify-content:space-between;}
+.intro .intro_txt { display: block; padding-top: 280px;}
+.intro .intro_txt p {transform: rotate(90deg);  font-family: var(--sub-font); font-size: 6rem; color: var(--sub-color); }
+
+.intro .intro_list a { padding-left: 30px; }
+.intro .intro_list dl {padding-left: 25px; display: block; }
+.intro .intro_list dl dt { font-size: 2rem; font-weight: 500; padding-bottom: 20px; }
+
+@media ( max-width:1500px) {
+    .intro .inner {display: flex; flex-wrap: wrap; }
+    .intro .intro_txt p {transform: rotate(0);  padding-bottom: 20px; }
+}
+@media ( max-width:750px) {
+    .intro { padding: 50px 0;}
+    .intro .intro_txt p { font-size: 4rem;}
+    .intro .intro_list dl { padding-top: 20px; padding-left: 0;}
+    .intro .intro_list:nth-child(2) a { padding-left: 0; width: 100%; overflow: hidden;}
+
+}
+
+/* main_slide*/
+.scroll-container .main_slide_wrap { position: relative;}
+.scroll-container .main_slide_wrap .main_slide { width: 100%; height: 500vh; 
+}
+.scroll-container .main_slide_wrap .main_slide .slide {width: 100%; transition: all 1.5s; height: 25%;}
+.scroll-obj.position.on { position: sticky; top: 0; z-index: 10;}
+.slide { background-size: cover; background-repeat: no-repeat; background-position: center;}
+
+.scroll-container .main_slide_wrap .slide_txt { position: absolute; left: 0; top: 10%; ; z-index: 55; text-align: center; width: 100%;}
+.scroll-container .main_slide_wrap .slide_txt p { font-family: var(--sub-font); font-size: 4rem; font-weight: 400; color: #fff; }
+
+
+@media (max-width:750px) {
+.scroll-container .main_slide_wrap .slide_txt p { font-size: 3rem; }
+}
+
+
+
+/* rooms */
+.rooms { padding: 200px 0;}
+.rooms h2 { font-family: var(--sub-font); font-size: 3rem; text-align: center; padding-bottom: 150px; }
+.rooms .rooms_list ul li img { width: 100%; padding-bottom: 50px;}
+.rooms .rooms_list .rooms_atype { display: flex; flex-wrap: wrap; align-items: center; }
+.rooms .rooms_list01 { width: 74.7619%; }
+.rooms .rooms_txt01 { width: calc(100% - 74.7619%); }
+.rooms .rooms_txt01 p { font-size: 3rem; padding-left: 150px;}
+.rooms .rooms_list .rooms_btype { display: flex;flex-wrap: wrap; align-items: center; }
+.rooms .rooms_list02 { width: 74.7619%; }
+.rooms .rooms_txt02 { width: calc(100% - 74.7619%); }
+.rooms .rooms_txt02 p { font-size: 3rem; padding-left: 150px;}
+.rooms .rooms_list .rooms_ctype { display: flex; align-items: center; flex-wrap: wrap; }
+.rooms .rooms_list03 { width: 74.7619%; }
+.rooms .rooms_txt03 { width: calc(100% - 74.7619%); }
+.rooms .rooms_txt03 p { font-size: 3rem; padding-left: 150px;}
+
+.swiper-button-next { color: #fff;}
+.swiper-button-prev { color: #fff;}
+
+@media (max-width:1200px) {
+    .rooms .rooms_txt01 p { padding-left: 30px;}
+    .rooms .rooms_txt02 p { padding-left: 0 ; padding-right: 30px;}
+    .rooms .rooms_txt03 p { padding-left: 30px;}
+}
+
+@media (max-width:750px) {
+    .rooms h2 {padding-bottom: 100px;}
+    .rooms .rooms_list .rooms_txt01 p {font-size: 2rem;}
+    .rooms .rooms_list .rooms_txt02 p {font-size: 2rem;}
+    .rooms .rooms_list .rooms_txt03 p {font-size: 2rem;}
+}
+
+/* banner */
+.banner { position: relative;} 
+.banner_txt dl {display: block; position: absolute; left: 0; top: 28%; z-index: 9; color: #fff; text-align: center; width: 100%;}
+.banner_txt dl dt { font-size: 2.5rem; padding-bottom: 10px; }
+.banner_txt dl dd { font-family: var(--sub-font); font-size: 2.5rem;}
+.banner .banner_list ul { position: relative; height: 800px; }
+.banner .banner_list ul li { font-size: 0; }
+.banner .banner_list ul li:nth-child(1) { position: absolute; left: 0; top: 0; background: url(../images/banner_01.jpg) no-repeat center; width: 100%; height: 800px;}
+.banner .banner_list ul li:nth-child(2) { position: absolute; left: 0; top: 0; background: url(../images/banner_02.jpg) no-repeat center; width: 100%; height: 800px;}
+.banner .banner_list ul li:nth-child(3) { position: absolute; left: 0; top: 0; background: url(../images/banner_03.jpg) no-repeat center; width: 100%; height: 800px;}
+.banner .banner_list ul li:nth-child(4) { position: absolute; left: 0; top: 0; background: url(../images/banner_04.jpg) no-repeat center; width: 100%; height: 800px;}
+
+@media (max-width:750px) {
+    .banner_txt dl dt { font-size: 2rem; }
+    .banner_txt dl dd { font-size: 2rem; }
+}
+
+
+/* special */
+.special { padding: 200px 0;}
+.special h2 { font-size: 3rem; color: var(--sub-color); text-align: center; padding-bottom: 100px;}
+.special ul li {  transition: all 0.5s; transform: scale(0.8); }
+.special ul li.swiper-slide-active { transform: scale(1);}
+.special ul li img {border-radius: 20px; width: 100%; height: 300px; }
+.special ul li p { font-size: 2rem; text-align: center; padding-top: 20px;}
+
+/* map */
+.map { padding: 100px 0;}
+.map .inner { max-width: 1600px; display: flex; justify-content: space-between;}
+.map .map_txt { display: block; padding-top: 300px;}
+.map .map_txt h2 { transform: rotate(90deg);  font-family: var(--sub-font); font-size: 6rem; color: var(--sub-color);}
+.map .map_list img { width: 100%; overflow: hidden;}
+.map .map_list p { padding: 20px 0; font-size: 2rem;}
+
+@media (max-width:1100px) {
+    .map { padding: 0;}
+    .map .inner { display: flex; flex-wrap: wrap;}
+    .map .map_txt { padding-top: 100px;}
+    .map .map_txt h2 { font-size: 4rem; transform: rotate(0);  padding-bottom: 20px;}
+}
+@media (max-width:750px) {
+    .map .map_list p {font-size: 1.6rem;}
+    .map .map_txt h2 { font-size: 3rem; }
+}
+
+.banner02 a { display: block; padding-top: 200px; overflow: hidden;}
+
+

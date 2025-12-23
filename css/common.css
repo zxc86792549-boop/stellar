@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+:root {
+    --main-font:"Pretendard", sans-serif;
+    --sub-font:"Inria Serif", serif;
+    --sub-color:#FFBD02 ;
+    --base-color:#f9f4e6;
+}
+
+body { font-family: var(--main-font); font-size: 1.6rem; line-height: 1.5; color: #000; overflow-x: hidden; }
+/*#wrap { overflow-x: hidden; }*/
+.inner { max-width: 1720px; margin: 0 auto; padding: 0 20px; }
+
+/* gnb 폰트 키우기 주변여행지 제목 폰트 키우기 */
+#header {position: absolute; left: 0; top: 0; width: 100%; padding-top: 20px; z-index: 99; color: #fff; position: fixed; left: 0; top: 0; transition: all 0.5s;}
+#header .inner { display: flex; justify-content: space-between; align-items: center;}
+#header h1 a { display: inline-block; background: url(../images/logo_w.png) no-repeat center; width: 73px; height: 112px; font-size: 0; cursor: pointer; filter: drop-shadow(1px 0 #999);  }
+#header ul { display: flex; gap: 50px; }
+#header ul li {position: relative; }
+#header ul li a { font-size: 1.8rem; font-weight: 500; filter: drop-shadow(1px 0 #999);}
+#header ul li:nth-child(6) {padding-left: 50px; position: relative; }
+
+#header .calender { display: block; background: url(../images/icon_calender_w.png) no-repeat center; font-size: 0; width: 18px; height: 18px; position: absolute; top:17%; right: 65%; cursor: pointer; filter: drop-shadow(1px 0 #999);}
+
+#header ul li .depth2 { display: none; position: absolute; left: calc(50% - 75px); width: 150px; top: 30px; text-align: center; }
+#header ul li .depth2 li { padding-bottom: 10px;}
+
+#header.active { color: #000; filter: 0;}
+#header.active h1 a { background: url(../images/logo_b.png) no-repeat center; width: 73px; height: 112px; font-size: 0; cursor: pointer;}
+#header.active .calender { background: url(../images/icon_calender_b.png) no-repeat center; font-size: 0; width: 18px; height: 18px; position: absolute; top: 17%; right: 65%; cursor: pointer; }
+
+#header .btn_ham { display: none; background: url(../images/btn_ham.svg) no-repeat center; width: 30px; height: 30px; font-size: 0; cursor: pointer;}
+#header .btn_close { position: absolute; right: 20px; top: 60px; background: url(../images/i_close_b.svg) no-repeat center; width: 30px; height: 30px; z-index: 101; font-size: 0; cursor: pointer;}
+
+#header .mgnb_wrap { display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100vh; background: var(--base-color); z-index: 100; padding: 100px 50px 0; color: #000; }
+#header .mgnb_wrap .mgnb { display: block;}
+#header .mgnb_wrap .mgnb li {font-size: 2rem;}
+#header .mgnb_wrap .mgnb .m_depth2 { gap: 20px;}
+#header .mgnb_wrap .mgnb .m_depth2 li {  padding: 30px 0; font-weight: 400; }
+#header .mgnb_wrap .mgnb .m_depth2 li a { font-size: 1.6rem; font-weight: 400; opacity: 0.6;}
+
+
+@media (max-width:1000px) {
+#header .gnb { display: none;}
+#header .calender { display: none;}
+#header .btn_ham { display: block;}
+
+}
+
+@media (max-width:600px) {
+
+}
+
+
+#footer {padding: 50px 0; background: var(--base-color);}
+#footer .inner { position: relative;}
+#footer .footer_left p { padding-bottom: 20px; }
+#footer .footer_left dl dd { padding-top: 20px;}
+#footer .footer_right { position: absolute; right: 0; top: 0;}
+
+#footer .footer_sns { padding-bottom: 20px;}
+
+ @media (max-width:750px) {  
+    #footer { font-size: 1.4rem;}
+    #footer .footer_right {text-align: left; margin: 20px 0; position: static; }
+   
+} 
