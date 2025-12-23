@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별숲글램핑</title>
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="index.html">로고</a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="direction.html">PROLOGUE</a>
+                            <ul class="depth2">
+                                <li><a href="direction.html">오시는길</a></li>
+                                <li><a href="travel.html">주변 여행지</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rooms.html">ROOMS</a>
+                            <ul class="depth2">
+                                <li><a href="rooms.html">객실배치도</a></li>
+                                <li><a href="a_type.html">A TYPE</a></li>
+                                <li><a href="b_type.html">B TYPE</a></li>
+                                <li><a href="c_type.html">C TYPE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reservat.html">RESERVE</a>
+                            <ul class="depth2">
+                                <li><a href="reservat.html">종합예약안내</a></li>
+                                <li><a href="#">실시간 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="facility_01.html">FACILITY</a>
+                            <ul class="depth2">
+                                <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                <li><a href="facility_02.html">잔디광장</a></li>
+                                <li><a href="facility_03.html">야외 수영장</a></li>
+                                <li><a href="facility_04.html">매점</a></li>
+                                <li><a href="facility_05.html">산책길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service1.html">SERVICE</a>
+                            <ul class="depth2">
+                                <li><a href="service1.html">응급구급함</a></li>
+                                <li><a href="service2.html">각종 양념</a></li>
+                                <li><a href="service3.html">배드민턴,보드게임</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">실시간예약</a><a href="#" class="calender"> 달력 </a></li>
+                    </ul>
+                    <button class="btn_ham">메뉴열기</button>
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">PROLOGUE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="exterior.html">외부전경</a></li>
+                                    <li><a href="direction.html">오시는길</a></li>
+                                    <li><a href="travel.html">주변 여행지</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ROOMS</a>
+                                <ul class="m_depth2">
+                                    <li><a href="rooms.html">객실배치도</a></li>
+                                    <li><a href="a_type.html">A TYPE</a></li>
+                                    <li><a href="b_type.html">B TYPE</a></li>
+                                    <li><a href="c_type.html">C TYPE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">RESERVE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="reservat.html">종합예약안내</a></li>
+                                    <li><a href="#">실시간 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FACILITY</a>
+                                <ul class="m_depth2">
+                                    <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                    <li><a href="facility_02.html">잔디광장</a></li>
+                                    <li><a href="facility_03.html">야외 수영장</a></li>
+                                    <li><a href="facility_04.html">매점</a></li>
+                                    <li><a href="facility_05.html">산책길</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SERVICE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="service1.html">응급구급함</a></li>
+                                    <li><a href="service2.html">각종 양념</a></li>
+                                    <li><a href="service3.html">배드민턴,보드게임</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn_close">메뉴닫기</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="travel">
+            <p><img src="images/sub/bg2.jpg" alt="사진"></p>
+            <div class="inner">
+                <div class="travel_list">
+                    <h2 data-aos="fade-up">주변 여행지</h2>
+                    <ul>
+                        <li data-aos="fade-right"><a href="#"><img src="images/sub/travel_01.jpg" alt="사진"></a>
+                            <dl data-aos-delay="400" data-aos="fade-Down">
+                                <dt>신불산</dt>
+                                <dd>해당 지점의 고도는 1,159미터이며, 경상남도 양산시 하북면과 울산광역시 울주군 삼남면 및 상북면과 경계 지점에 위치하고 있습니다.<br>
+                                이 지역은 태백산맥의 내방산맥에 속하며, 북서쪽으로 2킬로미터 떨어진 곳에는 고도 1,069미터인 간월산, 남쪽으로 2.8키로미터 떨어진 곳에는 고도
+                                1,081미터인 영축산이 위치하며,
+                                이 두 산 사이에 약 3킬로미터에 걸쳐 넓고 평탄한 산등성이 연결되어 억새밭이 펼쳐져 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li data-aos="fade-left"><a href="#"><img src="images/sub/travel_02.jpg" alt="사진"></a>
+                            <dl data-aos-delay="500" data-aos="fade-Down">
+                                <dt>가지산</dt>
+                                <dd>해당 산의 고도는 1,241미터로, 이 산은 태백산맥의 끝 부분에 위치한 산입니다.<br>
+                                이 산은 주변의 운문산(1,188m), 천황산(1,189m), 고헌산(1,034m) 등과 함께 태백산맥의 남쪽 끝 부분의 산지를 형성하고
+                                있습니다.<br>
+                                또한, 신불산(1,159m), 간월산(1,069m), 그리고 영축산(일명 최서산 1,081m)과 함께 영남 지역의 알프스로 불리며, 이들 중에서 가장
+                                높은 산입니다.</dd>
+                            </dl>
+                        </li>
+                        <li data-aos="fade-right"><a href="#"><img src="images/sub/travel_03.jpg" alt="사진"></a>
+                            <dl data-aos-delay="400" data-aos="fade-Down">
+                                <dt>자수정동굴나라</dt>
+                                <dd>한국자수정산업관광주식회사가 관리하는 동굴 공원으로, 울주군과 언양읍 지역은 세계적으로 유명한 자수정 산지로 알려져 있으며, <br>
+                                이 지역에는 100여 개의 자수정 광산이 존재합니다.<br>
+                                이 중 한 광산이 관광 목적으로 개발되어 동굴 공원으로 운영되고 있습니다.<br>
+                                이 동굴의 총 길이는 2.5킬로미터이며, 내부 온도는 여름에는 10~14℃로 시원하고, 겨울에는 따뜻한 환경을 제공합니다.<br>
+                                [출처:대한민국구석구석]</dd>
+                            </dl>
+                        </li>
+                        <li  data-aos="fade-left"><a href="#"><img src="images/sub/travel_04.jpg" alt="사진"></a>
+                            <dl data-aos-delay="500" data-aos="fade-Down">
+                                <dt>적천정계곡</dt>
+                                <dd>해발 1,083m의 간월산에서 시작하여 등억리를 통과하며 작천정 앞으로 흐르는 시내를 작괘천으로 알려지고 있습니다.<br>
+                                작괘천은 그 맑은 물과 멋진 경관으로, 오랫동안 언양 지역의 안식처로 각괸 바 있습니다.<br>
+                                언양 지역에서 남쪽으로 3km 정도 이동한 후 다시 서쪽으로 꺾이는 도로를 따라가면, 수십 년의 세월을 견디어온 아름다운 벚나무 터널을 발견할 수
+                                있습니다.<br>
+                                이 목가적인 벚나무 터널 아래로 약 1km 정도 진입하면 작천정이 아름답게 펼쳐집니다.<br>
+                                [출처:대한민국구석구석]</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_left">
+                    <a href="#">010-7388-6215</a>
+                    <p>별,숲 글램핑</p>
+                    <dl>
+                        <dt>대표 정길모 | 울산 울주군 삼동면 산현출강길72</dt>
+                        <dt>ACC 새마을금고 9003-2870-1754-5 정길모</dd>
+                        <dd>사업자번호 729-30-01280</dd>
+                    </dl>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_sns">
+                        <a href="#"><img src="images/icon_insta.png" alt="인스타"></a>
+                        <a href="#"><img src="images/icon_blog.png" alt="블로그"></a>
+                    </div>
+                    <address>
+                        <a href="#">개인정보취급방침 |</a>
+                        <a href="#">저작권 |</a>
+                        <a href="#">홈페이지제작 펜션나라</a>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

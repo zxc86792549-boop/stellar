@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별숲글램핑</title>
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/sub.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="index.html">로고</a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="direction.html">PROLOGUE</a>
+                            <ul class="depth2">
+                                <li><a href="direction.html">오시는길</a></li>
+                                <li><a href="travel.html">주변 여행지</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rooms.html">ROOMS</a>
+                            <ul class="depth2">
+                                <li><a href="rooms.html">객실배치도</a></li>
+                                <li><a href="a_type.html">A TYPE</a></li>
+                                <li><a href="b_type.html">B TYPE</a></li>
+                                <li><a href="c_type.html">C TYPE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reservat.html">RESERVE</a>
+                            <ul class="depth2">
+                                <li><a href="reservat.html">종합예약안내</a></li>
+                                <li><a href="#">실시간 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="facility_01.html">FACILITY</a>
+                            <ul class="depth2">
+                                <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                <li><a href="facility_02.html">잔디광장</a></li>
+                                <li><a href="facility_03.html">야외 수영장</a></li>
+                                <li><a href="facility_04.html">매점</a></li>
+                                <li><a href="facility_05.html">산책길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service1.html">SERVICE</a>
+                            <ul class="depth2">
+                                <li><a href="service1.html">응급구급함</a></li>
+                                <li><a href="service2.html">각종 양념</a></li>
+                                <li><a href="service3.html">배드민턴,보드게임</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">실시간예약</a><a href="#" class="calender"> 달력 </a></li>
+                    </ul>
+                    <button class="btn_ham">메뉴열기</button>
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">PROLOGUE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="direction.html">오시는길</a></li>
+                                    <li><a href="travel.html">주변 여행지</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ROOMS</a>
+                                <ul class="m_depth2">
+                                    <li><a href="rooms.html">객실배치도</a></li>
+                                    <li><a href="a_type.html">A TYPE</a></li>
+                                    <li><a href="b_type.html">B TYPE</a></li>
+                                    <li><a href="c_type.html">C TYPE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">RESERVE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="reservat.html">종합예약안내</a></li>
+                                    <li><a href="#">실시간 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FACILITY</a>
+                                <ul class="m_depth2">
+                                    <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                    <li><a href="facility_02.html">잔디광장</a></li>
+                                    <li><a href="facility_03.html">야외 수영장</a></li>
+                                    <li><a href="facility_04.html">매점</a></li>
+                                    <li><a href="facility_05.html">산책길</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SERVICE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="service1.html">응급구급함</a></li>
+                                    <li><a href="service2.html">각종 양념</a></li>
+                                    <li><a href="service3.html">배드민턴,보드게임</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn_close">메뉴닫기</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="reservat">
+            <div class="reservat_visual">
+                <a href="#">사진</a>
+            </div>
+            <div class="reservat_list">
+                <div class="inner">
+                    <div class="reservat_info">
+                        <div data-aos="fade-right" class="reservat_left">
+                            <dl>
+                                <dt>별숲글램핑 INFO</dt>
+                                <dd>예약 문의 : 010-7388-6215</dd>
+                                <dd>계좌 안내 : 새마을금고 9003-2870-1754-5</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가인원안내</dt>
+                                <dd>기준인원 초과 시 추가 요금 발생합니다.</dd>
+                                <dd>성인 1인 30,000원</dd>
+                                <dd>7세 이상 1인 20,000원</dd>
+                                <dd>7세 미만 무료</dd>
+                            </dl>
+                            <p>미성년자는 보호자 동반 없이 이용 하실 수 없습니다.</p>
+                            <p>반려동물과 함께 입실하실 수 없습니다.</p>
+                            <p>객실 내에서는 절대 금연입니다.</p>
+                        </div>
+                        <div data-aos-delay="500" data-aos="fade-left" class="reservat_right">
+                            <a href="#"><img src="images/sub/reservat_info.jpg" alt="사진"></a>
+                        </div>
+                    </div>
+                    <div class="reservat_guide">
+                        <h2 data-aos-delay="500" data-aos="fade-up">User Guide</h2>
+                        <div class="reservat_txt">
+                            <dl>
+                                <dt>01. 입금 및 예약확인</dt>
+                                <dd>예약자명을 입금자명과 동일하게 하여 예약을 진행하셔야 하며, 다를 경우 펜션 주에게 연락을 주시면 됩니다.<br>예약신청 후 6시간 내로 전액을
+                                    입금하셔야 예약이 완료됩니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>02. 최대인원 초과시</dt>
+                                <dd>최대 인원이 초과되거나 기존 예약 인원과 방문 시 인원이 다를 경우 환불 조치 없이 강제 퇴실됩니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>03. 입실시간</dt>
+                                <dd>이용당일 15:00 입니다.<br>(오후 5시 이후 입실하실 이용객분께서는 이용일 전날 글램핑으로 연락 바랍니다)<br>매너 타임 22:00 ~
+                                    07:00(지속적인 민원이 들어올 경우, 환불없이 강제 퇴실조치)</dd>
+                            </dl>
+                            <dl>
+                                <dt>04. 퇴실시간</dt>
+                                <dd>마지막 이용일 오전11시까지입니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>05. 당일치기</dt>
+                                <dd>당일치기 이용은 전화로만 예약 가능합니다.<br>당일 예약 혹은 하루 전 예약 시, 예약한 후 2시간 내로 결제해주셔야 예약이
+                                    확정됩니다.<br>당일치기 이용객분들은 다양한 놀이시설과 개인 바비큐, 불멍 세트 및 카페와 수영장 이용이 모두 가능합니다.<br>당일 이용 시간 :
+                                    오후2시 ~ 오후9시</dd>
+                            </dl>
+                            <dl>
+                                <dt>06. 취사 및 바베큐</dt>
+                                <dd>침실 내 화구사용 불가, 간단한 스낵류 및 주류만 섭취 가능<br>객실 내에서는 냄새가 심한 요리(생선튀김, 청국장, 육류구이, 조개구이 등)는 조리
+                                    불가합니다.<br>바비큐 그릴 사용은 오로지 야외에서만 가능<br>개인 바베큐 그릴 및 화로대, 개인화구 사용 절대불가</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="reservat_refund">
+                        <h2 data-aos-delay="500" data-aos="fade-up">Refund info</h2>
+                        <div class="reservat_refund_txt">
+                            <dl>
+                                <dt>올바른 예약문화 정착을 위하여 해당 업소에서는 예약 취소시 환불기준을 아래와 같이 운영하고 있으니<br>
+                                    확인을 하시고 예약해주시기 바랍니다.</dt>
+                                <dd>당일예약 후 당일 취소시에도 수수료 적용되니 신중히 예약바랍니다.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <table class="price">
+                        <tr>
+                            <th>이용일 <br>기준</th>
+                            <th>
+                                기본 취소<br>수수료
+                            </th>
+                            <th>
+                                8일전 <br>취소시
+                            </th>
+                            <th>
+                                7일전<br>취소시
+                            </th>
+                            <th>
+                                6일전<br>취소시
+                            </th>
+                            <th>
+                                5일전<br> 취소시
+                            </th>
+                            <th>
+                                4일전<br> 취소시
+                            </th>
+                            <th>
+                                3일전<br>취소시
+                            </th>
+                            <th>
+                                2일전<br> 취소시
+                            </th>
+                            <th>
+                                1일전<br> 취소시
+                            </th>
+                            <th>
+                                이용일<br>당일
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>취소 수수료</td>
+                            <td>100%환불</td>
+                            <td>100%환불</td>
+                            <td>80% 환불</td>
+                            <td>70% 환불</td>
+                            <td>60% 환불</td>
+                            <td>50% 환불</td>
+                            <td>40% 환불</td>
+                            <td>20% 환불</td>
+                            <td class="red">환불없음</td>
+                            <td class="red">환불없음</td>
+                        </tr>
+                    </table>
+                    <table class="m_price">
+                        <tr>
+                            <th>이용일 기준</th>
+                            <td>취소 수수료</td>
+                        </tr>
+                        <tr>
+                            <th>기본 취소 수수료</th>
+                            <td>100% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>8일전 취소시</th>
+                            <td>100% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>7일전 취소시</th>
+                            <td>80% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>6일전 취소시</th>
+                            <td>70% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>5일전 취소시</th>
+                            <td>60% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>4일전 취소시</th>
+                            <td>50% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>3일전 취소시</th>
+                            <td>40% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>2일전 취소시</th>
+                            <td>20% 환불</td>
+                        </tr>
+                        <tr>
+                            <th>1일전 취소시</th>
+                            <td class="red">환불없음</td>
+                        </tr>
+                        <tr>
+                            <th>이용일 당일</th>
+                            <td class="red">환불없음</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="inner">
+                <div data-aos="fade-right" class="map_txt">
+                    <h2>Visit Glampimjang<br>
+                        Let nature lead the way.</h2>
+                </div>
+                <div data-aos-delay="500" data-aos="fade-left" class="map_list">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d51976.872643823575!2d129.16511433686532!3d35.49056385585451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z67OE7Iiy6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1758843504722!5m2!1sko!2skr"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>별숲글램핑 오시는길<br>
+                        주소 : 울산 울주군 삼동면 산현출강길 72 </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_left">
+                    <a href="#">010-7388-6215</a>
+                    <p>별,숲 글램핑</p>
+                    <dl>
+                        <dt>대표 정길모 | 울산 울주군 삼동면 산현출강길72</dt>
+                        <dt>ACC 새마을금고 9003-2870-1754-5 정길모</dd>
+                        <dd>사업자번호 729-30-01280</dd>
+                    </dl>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_sns">
+                        <a href="#"><img src="images/icon_insta.png" alt="인스타"></a>
+                        <a href="#"><img src="images/icon_blog.png" alt="블로그"></a>
+                    </div>
+                    <address>
+                        <a href="#">개인정보취급방침 |</a>
+                        <a href="#">저작권 |</a>
+                        <a href="#">홈페이지제작 펜션나라</a>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

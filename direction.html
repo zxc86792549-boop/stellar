@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별숲글램핑</title>
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/sub.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="index.html">로고</a></h1>
+                <nav>
+                   <ul class="gnb">
+                        <li><a href="direction.html">PROLOGUE</a>
+                            <ul class="depth2">
+                                <li><a href="direction.html">오시는길</a></li>
+                                <li><a href="travel.html">주변 여행지</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="rooms.html">ROOMS</a>
+                            <ul class="depth2">
+                                <li><a href="rooms.html">객실배치도</a></li>
+                                <li><a href="a_type.html">A TYPE</a></li>
+                                <li><a href="b_type.html">B TYPE</a></li>
+                                <li><a href="c_type.html">C TYPE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reservat.html">RESERVE</a>
+                            <ul class="depth2">
+                                <li><a href="reservat.html">종합예약안내</a></li>
+                                <li><a href="#">실시간 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="facility_01.html">FACILITY</a>
+                            <ul class="depth2">
+                                <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                <li><a href="facility_02.html">잔디광장</a></li>
+                                <li><a href="facility_03.html">야외 수영장</a></li>
+                                <li><a href="facility_04.html">매점</a></li>
+                                <li><a href="facility_05.html">산책길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service1.html">SERVICE</a>
+                            <ul class="depth2">
+                                <li><a href="service1.html">응급구급함</a></li>
+                                <li><a href="service2.html">각종 양념</a></li>
+                                <li><a href="service3.html">배드민턴,보드게임</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">실시간예약</a><a href="#" class="calender"> 달력 </a></li>
+                    </ul>
+                    <button class="btn_ham">메뉴열기</button>
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">PROLOGUE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="direction.html">오시는길</a></li>
+                                    <li><a href="travel.html">주변 여행지</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ROOMS</a>
+                                <ul class="m_depth2">
+                                    <li><a href="rooms.html">객실배치도</a></li>
+                                    <li><a href="a_type.html">A TYPE</a></li>
+                                    <li><a href="b_type.html">B TYPE</a></li>
+                                    <li><a href="c_type.html">C TYPE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">RESERVE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="reservat.html">종합예약안내</a></li>
+                                    <li><a href="#">실시간 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FACILITY</a>
+                                <ul class="m_depth2">
+                                    <li><a href="facility_01.html">바베큐&불멍</a></li>
+                                    <li><a href="facility_02.html">잔디광장</a></li>
+                                    <li><a href="facility_03.html">야외 수영장</a></li>
+                                    <li><a href="facility_04.html">매점</a></li>
+                                    <li><a href="facility_05.html">산책길</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SERVICE</a>
+                                <ul class="m_depth2">
+                                    <li><a href="service1.html">응급구급함</a></li>
+                                    <li><a href="service2.html">각종 양념</a></li>
+                                    <li><a href="service3.html">배드민턴,보드게임</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button class="btn_close">메뉴닫기</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="map">
+            <div class="map_visual">
+                <a href="#">사진</a>
+            </div>
+                <div class="inner">
+                    <div data-aos="fade-right" class="map_txt">
+                        <h2>Visit Glampimjang<br>
+                            Let nature lead the way.</h2>
+                    </div>
+                    <div data-aos-delay="500" data-aos="fade-left" class="map_list">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d51976.872643823575!2d129.16511433686532!3d35.49056385585451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z67OE7Iiy6riA656o7ZWR!5e0!3m2!1sko!2skr!4v1758843504722!5m2!1sko!2skr"
+                            width="800" height="600" style="border:0;"  allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>별숲글램핑 오시는길<br>
+                            주소 : 울산 울주군 삼동면 산현출강길 72 </p>
+                    </div>
+                </div>
+            </section>
+        
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_left">
+                    <a href="#">010-7388-6215</a>
+                    <p>별,숲 글램핑</p>
+                    <dl>
+                        <dt>대표 정길모 | 울산 울주군 삼동면 산현출강길72</dt>
+                        <dt>ACC 새마을금고 9003-2870-1754-5 정길모</dd>
+                        <dd>사업자번호 729-30-01280</dd>
+                    </dl>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_sns">
+                        <a href="#"><img src="images/icon_insta.png" alt="인스타"></a>
+                        <a href="#"><img src="images/icon_blog.png" alt="블로그"></a>
+                    </div>
+                    <address>
+                        <a href="#">개인정보취급방침 |</a>
+                        <a href="#">저작권 |</a>
+                        <a href="#">홈페이지제작 펜션나라</a>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>
